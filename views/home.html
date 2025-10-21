@@ -8,21 +8,21 @@
     <script src="js/formVal.js" defer></script>
 </head>
 <body>
-    <form action="#" id="form">
+    <form action="admin-page" id="form" method="post">
         <legend>Appointment Form</legend>
-        <label for="fname">First Name <input type="text" id="fname"></label>
+        <label for="fname">First Name <input type="text" id="fname" name="fname"></label>
         <br>
         <span id="err-fname" class="error">First name cannot be empty!</span>
         <br>
-        <label for="lname">Last Name <input type="text" id="lname"></label>
+        <label for="lname">Last Name <input type="text" id="lname" name="lname"></label>
         <br>
         <span id="err-lname" class="error">Last name cannot be empty!</span>
         <br>
-        <label for="date">Date <input type="date" id="date"></label>
+        <label for="date">Date <input type="date" id="date" name="date"></label>
         <br>
         <span id="err-date" class="error">Date cannot be empty!</span>
         <br>
-        <label for="time">Time <input type="time" id="time"></label>
+        <label for="time">Time <input type="time" id="time" name="time"></label>
         <br>
         <span id="err-time" class="error">Time cannot be empty!</span>
         <br>

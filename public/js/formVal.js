@@ -20,13 +20,13 @@ document.getElementById('form').onsubmit = () => {
         isValid = false;
     }
 
-    let date = document.getElementById('date').value.trim();
+    let date = document.getElementById('date').value;
     if (!date) {
         document.getElementById("err-date").style.display = "block";
         isValid = false;
     }
 
-    let time = document.getElementById('time').value.trim();
+    let time = document.getElementById('time').value;
     if (!time) {
         document.getElementById("err-time").style.display = "block";
         isValid = false;
