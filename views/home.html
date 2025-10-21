@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointment Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/formVal.js" defer></script>
 </head>
 <body>
-    <h1>Appointment Form</h1>
-    <form action="post" id="form">
+    <form action="#" id="form">
+        <legend>Appointment Form</legend>
         <label for="fname">First Name <input type="text" id="fname"></label>
+        <br>
+        <span id="err-fname" class="error">First name cannot be empty!</span>
+        <br>
         <label for="lname">Last Name <input type="text" id="lname"></label>
+        <br>
+        <span id="err-lname" class="error">Last name cannot be empty!</span>
+        <br>
         <label for="date">Date <input type="date" id="date"></label>
+        <br>
+        <span id="err-date" class="error">Date cannot be empty!</span>
+        <br>
         <label for="time">Time <input type="time" id="time"></label>
+        <br>
+        <span id="err-time" class="error">Time cannot be empty!</span>
+        <br>
         <button type="submit">Submit</button>
     </form>
 </body>
