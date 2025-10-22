@@ -10,12 +10,20 @@ app.get('/', (req, res) =>{
     res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
 
-app.post('/admin-page', (req, res) =>{
+
+//Admin page where all the reservations are submitted
+app.get('/admin-page', (req, res) =>{
+    res.send(submissions);
+});
+
+app.post('/reservation', (req, res) =>{
+    const currentTime = new Date();
     const appointment = {
         fname: req.body.fname,
         lname: req.body.lname,
         date: req.body.date,
-        time: req.body.time
+        time: req.body.time,
+        submitTime : currentTime
     }
     submissions.push(appointment);
     console.log(submissions);
