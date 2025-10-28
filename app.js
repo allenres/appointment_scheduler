@@ -12,7 +12,7 @@ app.get('/', (req, res) =>{
 
 
 //Admin page where all the reservations are submitted
-app.get('/admin-page', (req, res) =>{
+app.get('/admin', (req, res) =>{
     res.send(submissions);
 });
 
