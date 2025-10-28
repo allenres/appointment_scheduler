@@ -1,0 +1,1 @@
+A form where users can enter their first and last name along with a meeting date and time. The form will submit this data to a backend server, which will store and return the array of booked appointments.
